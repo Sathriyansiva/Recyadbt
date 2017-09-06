@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:background="@color/toolbacolorr"
+        android:elevation="5dp"
+        android:fitsSystemWindows="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="217dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/applogo" />
+
+        <!--  <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/toolbacolorr"
+
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:title=""
+            app:titleTextColor="#fcfcfc"
+
+            />-->
+        <View
+            android:layout_width="94dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="75.43" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/power"
+            android:onClick="logout" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/background_gradiant"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Font.FontDesign
+            android:id="@+id/title_name"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="Digital Service Platform"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#dcdbdb"
+        android:elevation="5dp"
+        android:fadingEdge="none"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elevation="30dp"
+                    android:gravity="center"
+
+                    android:stretchColumns="1">
+
+                    <Font.FontDesign
+                        android:id="@+id/existing"
+                        android:layout_height="35dp"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@color/litelogocolor"
+                        android:gravity="center"
+                        android:shadowColor="@color/white"
+                        android:text="Employee Details"
+                        android:textColor="@color/white"
+                        android:textSize="17sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="4dp"
+                    android:stretchColumns="1">
+
+                    <Font.FontDesign
+                        android:id="@+id/sanRegularCustomFont"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="12.75"
+
+                        android:padding="4dp"
+                        android:text="Employee Name"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="6dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=":"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/hm_em_name"
+                        android:layout_width="187dp"
+                        android:layout_height="35dp"
+                        android:addStatesFromChildren="true"
+                        android:background="@drawable/edittext_login"
+                        android:elevation="15dp"
+                        android:ems="10"
+
+                        android:gravity="start"
+                        android:maxLines="1"
+                        android:overScrollMode="ifContentScrolls"
+                        android:padding="3dip"
+                        android:typeface="sans" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:orientation="horizontal"
+                    android:stretchColumns="1">
+
+                    <Font.FontDesign
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_vertical"
+                        android:padding="4dp"
+                        android:layout_weight="12.75"
+
+                        android:text="Designation"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15sp"
+
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="6dp"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        />
+
+                    <EditText
+                        android:id="@+id/hm_design"
+                        android:layout_width="187dp"
+                        android:layout_height="35dp"
+                        android:addStatesFromChildren="true"
+                        android:background="@drawable/edittext_login"
+                        android:elevation="15dp"
+                        android:ems="10"
+                        android:gravity="start"
+                        android:maxLines="1"
+                        android:overScrollMode="ifContentScrolls"
+                        android:padding="3dip"
+                        android:typeface="sans" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="30dp"
+                android:padding="10dp"
+                android:gravity="center"
+                android:stretchColumns="1">
+
+                    <Font.FontDesign
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@color/litelogocolor"
+                        android:gravity="center"
+                        android:shadowColor="@color/white"
+                        android:text="Choose a Policies "
+                        android:textColor="@color/white"
+                        android:textSize="17sp" />
+
+                </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="30dp"
+                android:gravity="center"
+                android:stretchColumns="1">
+
+                <RadioGroup
+                    android:id="@+id/hm_choose_policies"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/hm_rb_hr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="4dp"
+                        android:text="HR Policies"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/hm_rb_safety"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="4dp"
+                        android:text="Safety Policies"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:elevation="30dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:stretchColumns="1">
+
+                <Font.FontDesign
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@color/litelogocolor"
+                    android:gravity="center"
+                    android:shadowColor="@color/white"
+                    android:text="Select Mode "
+                    android:textColor="@color/white"
+                    android:textSize="17sp" />
+
+
+                <RadioGroup
+                    android:id="@+id/hm_select_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <RadioButton
+                        android:id="@+id/hm_rb_audio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="4dp"
+                        android:text="Audio"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/hm_rb_video"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="4dp"
+                        android:text="Video"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/hm_rb_presentation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="4dp"
+                        android:text="Presentation"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </RadioGroup>
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/toolbacolorr" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <com.dd.CircularProgressButton
+                    android:id="@+id/cancelbtn"
+                    android:layout_width="67dp"
+                    android:layout_height="30dp"
+                    android:background="@color/toolbacolorr"
+                    android:elevation="15dp"
+                    android:gravity="center"
+                    android:onClick="go"
+                    android:textAllCaps="false"
+                    android:textColor="#f9f7f7"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:typeface="normal"
+                    app:cpb_colorIndicator="@color/grey"
+                    app:cpb_colorIndicatorBackground="@color/grey"
+                    app:cpb_colorProgress="@color/white"
+                    app:cpb_iconComplete="@drawable/ic_done_black_24dp"
+                    app:cpb_textIdle="Go"
+                    app:cpb_selectorIdle="@drawable/round_button"
+                    />
+                <Button
+                    android:id="@+id/submit_btn"
+                    android:layout_width="67dp"
+                    android:layout_height="30dp"
+                    android:background="@color/toolbacolorr"
+                    android:elevation="15dp"
+                    android:gravity="center"
+                    android:onClick="go"
+                    android:text="Go"
+                    android:visibility="gone"
+                    android:textAllCaps="false"
+                    android:textColor="#f9f7f7"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/background_gradiant"
+        android:gravity="center"
+        android:onClick="exit"
+        android:text="Exit"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="18dp" />
+</LinearLayout>

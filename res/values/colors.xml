@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1c2a47</color>
+    <color name="colorPrimaryDark">#1c2a47</color>
+    <color name="colorAccent">#0094d9</color>
+
+
+    <color name="grey">#fcfcfc</color>
+    <color name="white">#ffffff</color>
+    <color name="lite_white">#f2f0f0</color>
+
+
+    <color name="background">#efeeee</color>
+    <color name="black">#000000</color>
+    <color name="iviry">#FFFFF0</color>
+    <color name="coffee">#2B0F0E</color>
+    <color name="logocolor">#1c2a47</color>
+    <color name="litelogocolor">#9933cc</color>
+    <color name="backcolor">#ff0000</color>
+    <color name="logograycolor">#fa8c86</color>
+    <color name="toolbacolorr">#1c2a47</color>
+    <color name="shadow">#555555</color>
+    <color name="title">#777777</color>
+    <color name="backgradientcolor">#2f88cc</color>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+    <color name="activity_hint_color">#E0E0E0</color>
+    <color name="text_color">#0095d9</color>
+
+    <color name="textcolor">#0095d9</color>
+    <color name="toolbacolorr1">#1948f1</color>
+    <color name="home_text_color">#0094d9</color>
+</resources>
