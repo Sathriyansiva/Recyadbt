@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.brainmagic">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/bmappicon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/bmappicon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Login"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".HomePage"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Vedio_ist"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Audio_list"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Present_list"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".VideoPlayer"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".ShowPresentaion"></activity>
+    </application>
+
+</manifest>
